@@ -1,0 +1,19 @@
+// lib/main.dart
+import 'package:flutter/material.dart';
+import '../telas/tela_prato_principal.dart';
+void main() {
+  runApp(const RootApp());
+}
+
+class RootApp extends StatelessWidget {
+  const RootApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Pedidos de restaurante',
+      theme: ThemeData.dark(useMaterial3: true),
+      home: const TelaPratoPrincipal(),
+    );
+  }
+}
